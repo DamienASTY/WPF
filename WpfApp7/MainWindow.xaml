@@ -15,5 +15,29 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Button Height="100">Boutton 1</Button>
+            <Button Height="100">Boutton 2</Button>
+        </StackPanel>
+        <DockPanel Grid.Row="0" Grid.Column="1">
+            <Button Content="Top" DockPanel.Dock="Top" Height="50"/>
+            <Button Content="Bottom" DockPanel.Dock="Bottom" Height="50"/>
+            <Button Content="Left" DockPanel.Dock="Left" Width="50"/>
+            <Button Content="Right" DockPanel.Dock="Right" Width="50"/>
+            <Button>Center</Button>
+        </DockPanel>
+        <WrapPanel Grid.Row="1" Grid.Column="0">
+            <Button Width="100">Button 1</Button>
+            <Button Width="100">Button 2</Button>
+            <Button Width="100">Button 3</Button>
+            <Button Width="100" Height="40">Button 4</Button>
+            <Button Width="100" Height="40">Button 5</Button>
+            <Button Width="100" Height="40">Button 6</Button>
+        </WrapPanel>
+        <Canvas Grid.Row="1" Grid.Column="1">
+            <Ellipse Grid.Column="1" Height="100" Margin="73,0,0,0" Grid.Row="1" Stroke="Black" Fill="Black" Width="100" Canvas.Top="58" Canvas.Left="24"/>
+            <Ellipse Grid.Column="1" Height="75" Margin="86,0,0,0" Grid.Row="1" Stroke="Yellow" Width="75" Fill="Yellow" Canvas.Top="70" Canvas.Left="24"/>
+            <Ellipse Grid.Column="1" Height="50" Margin="99,0,0,0" Grid.Row="1" Stroke="Red" Width="50" Fill="Red" Canvas.Top="82" Canvas.Left="24"/>
+        </Canvas>
     </Grid>
 </Window>
